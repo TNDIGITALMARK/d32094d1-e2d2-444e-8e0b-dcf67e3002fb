@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import { HeroImage } from '@/components/ui/optimized-image'
 
 interface HeroProps {
   preHeading?: string
@@ -10,6 +11,8 @@ interface HeroProps {
   secondaryCtaText?: string
   secondaryCtaLink?: string
   backgroundStyle?: 'gradient' | 'solid' | 'image'
+  backgroundImage?: string
+  backgroundImageAlt?: string
   className?: string
 }
 
@@ -22,6 +25,8 @@ export default function Hero({
   secondaryCtaText,
   secondaryCtaLink,
   backgroundStyle = 'gradient',
+  backgroundImage,
+  backgroundImageAlt = 'Hero background',
   className = ''
 }: HeroProps) {
   const bgClass = backgroundStyle === 'gradient'
@@ -31,8 +36,21 @@ export default function Hero({
     : 'bg-muted text-foreground'
 
   return (
-    <section className={`relative ${bgClass} pt-32 pb-20 ${className}`}>
-      <div className="container mx-auto px-4">
+    <section className={`relative ${backgroundStyle !== 'image' ? bgClass : ''} pt-32 pb-20 ${className}`}>
+      {/* Background Image */}
+      {backgroundStyle === 'image' && backgroundImage && (
+        <div className="absolute inset-0 z-0">
+          <HeroImage
+            src={backgroundImage}
+            alt={backgroundImageAlt}
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+      )}
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {preHeading && (
             <p className="text-lg md:text-xl font-medium mb-4 opacity-90">
