@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Carl Shawn Watkins | Leadership Consulting for Legal Professionals",
+  description: "Transform from overwhelmed legal professional to confident, authentic leader. Vulnerability-based coaching, consulting, and speaking services for lawyers and law firms.",
 };
 
 export default function RootLayout({
