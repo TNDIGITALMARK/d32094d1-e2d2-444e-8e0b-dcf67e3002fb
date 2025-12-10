@@ -39,19 +39,23 @@ export default function Hero({
     <section className={`relative ${backgroundStyle !== 'image' ? bgClass : ''} pt-32 pb-20 ${className}`}>
       {/* Background Image */}
       {backgroundStyle === 'image' && backgroundImage && (
-        <div className="absolute inset-0 z-0">
-          <HeroImage
-            src={backgroundImage}
-            alt={backgroundImageAlt}
-            fill
-            priority
-            className="object-cover"
-          />
-        </div>
+        <>
+          <div className="absolute inset-0 z-0">
+            <HeroImage
+              src={backgroundImage}
+              alt={backgroundImageAlt}
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
+          {/* Overlay for text readability */}
+          <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/90 via-primary/80 to-primary/70"></div>
+        </>
       )}
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className={`max-w-4xl mx-auto text-center ${backgroundStyle === 'image' ? 'text-white dark-bg-container' : ''}`}>
           {preHeading && (
             <p className="text-lg md:text-xl font-medium mb-4 opacity-90 text-on-dark-90">
               {preHeading}

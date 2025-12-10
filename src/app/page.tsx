@@ -21,35 +21,56 @@ export default function Home() {
         ctaLink="#contact"
         secondaryCtaText="Learn More"
         secondaryCtaLink="#about"
-        backgroundStyle="gradient"
+        backgroundStyle="image"
+        backgroundImage="/generated/leadership-hero.jpg"
+        backgroundImageAlt="Professional leadership consulting in modern law office"
       />
 
-      {/* Introduction Section */}
+      {/* Introduction Section with Profile Image */}
       <section id="about" className="section bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="mb-6">Leadership Transformation for Legal Professionals</h2>
-            <p className="lead mb-8">
-              The legal profession demands excellence, but at what cost? You're not alone in feeling the weight of expectations,
-              the isolation of leadership, or the struggle to maintain your authentic self while meeting professional demands.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8">
-              I'm Carl Shawn Watkins, and I specialize in helping lawyers, partners, and legal executives rediscover their
-              purpose through vulnerability-based leadership. Together, we'll transform pressure into power and isolation into connection.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/coaching"
-                className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
-              >
-                Explore Courage2Connect Coaching
-              </Link>
-              <Link
-                href="#services"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white-button transition-all font-semibold"
-              >
-                View All Services
-              </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+            {/* Profile Image */}
+            <div className="order-2 lg:order-1">
+              <div className="relative">
+                <div className="img-container aspect-square max-w-lg mx-auto">
+                  <img
+                    src="/generated/carl-watkins-profile.jpg"
+                    alt="Carl Shawn Watkins - Leadership Coach"
+                    className="profile-img w-full h-full"
+                  />
+                </div>
+                <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground p-6 rounded-xl shadow-xl max-w-xs hidden lg:block">
+                  <p className="font-semibold text-lg">"Your authentic self is your greatest leadership asset."</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="order-1 lg:order-2">
+              <h2 className="mb-6">Leadership Transformation for Legal Professionals</h2>
+              <p className="lead mb-6">
+                The legal profession demands excellence, but at what cost? You're not alone in feeling the weight of expectations,
+                the isolation of leadership, or the struggle to maintain your authentic self while meeting professional demands.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8">
+                I'm Carl Shawn Watkins, and I specialize in helping lawyers, partners, and legal executives rediscover their
+                purpose through vulnerability-based leadership. Together, we'll transform pressure into power and isolation into connection.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/coaching"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
+                >
+                  Explore Courage2Connect Coaching
+                </Link>
+                <Link
+                  href="#services"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white-button transition-all font-semibold"
+                >
+                  View All Services
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -109,7 +130,7 @@ export default function Home() {
       {/* Leadership Consulting Deep Dive */}
       <section id="leadership-consulting" className="section bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
             <div>
               <h2 className="mb-6">Leadership Consulting</h2>
               <p className="text-lg mb-6">
@@ -151,25 +172,36 @@ export default function Home() {
                 Reclaim Your Passion
               </Link>
             </div>
-            <div className="bg-primary rounded-2xl p-12 text-white dark-bg-container">
-              <h3 className="text-2xl font-semibold mb-6 text-on-dark">Your Firm's Transformation Journey</h3>
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 1: Discovery</h4>
-                  <p className="opacity-90 text-on-dark-90">Assessment of current culture, pain points, and leadership dynamics</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 2: Foundation</h4>
-                  <p className="opacity-90 text-on-dark-90">Building trust, establishing vulnerability-based leadership principles</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 3: Implementation</h4>
-                  <p className="opacity-90 text-on-dark-90">Rolling out programs, coaching leaders, transforming communication</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 4: Sustainability</h4>
-                  <p className="opacity-90 text-on-dark-90">Creating systems for ongoing growth and cultural reinforcement</p>
-                </div>
+
+            {/* Leadership Consulting Image */}
+            <div className="img-container aspect-landscape rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src="/generated/leadership-consulting.jpg"
+                alt="Leadership coaching session with diverse legal professionals"
+                className="img-cover img-hover-zoom"
+              />
+            </div>
+          </div>
+
+          {/* Transformation Journey */}
+          <div className="bg-primary rounded-2xl p-8 md:p-12 text-white dark-bg-container max-w-4xl mx-auto">
+            <h3 className="text-2xl font-semibold mb-8 text-center text-on-dark">Your Firm's Transformation Journey</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 1: Discovery</h4>
+                <p className="opacity-90 text-on-dark-90">Assessment of current culture, pain points, and leadership dynamics</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 2: Foundation</h4>
+                <p className="opacity-90 text-on-dark-90">Building trust, establishing vulnerability-based leadership principles</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 3: Implementation</h4>
+                <p className="opacity-90 text-on-dark-90">Rolling out programs, coaching leaders, transforming communication</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 4: Sustainability</h4>
+                <p className="opacity-90 text-on-dark-90">Creating systems for ongoing growth and cultural reinforcement</p>
               </div>
             </div>
           </div>
@@ -179,11 +211,23 @@ export default function Home() {
       {/* Speaking Section */}
       <section id="speaking" className="section bg-muted">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="mb-6">Keynote Speaking</h2>
-            <p className="lead mb-12">
-              Inspiring presentations that challenge conventional thinking about leadership in the legal profession
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="mb-6">Keynote Speaking</h2>
+              <p className="lead mb-8">
+                Inspiring presentations that challenge conventional thinking about leadership in the legal profession
+              </p>
+            </div>
+
+            {/* Featured Speaking Image */}
+            <div className="img-container aspect-video rounded-2xl overflow-hidden shadow-2xl mb-12">
+              <img
+                src="/generated/keynote-speaking.jpg"
+                alt="Carl Shawn Watkins delivering keynote presentation"
+                className="img-cover"
+              />
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-12">
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <h3 className="text-xl font-semibold mb-4">Popular Topics</h3>
@@ -228,35 +272,54 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <Link
-              href="#contact"
-              className="inline-flex items-center px-8 py-4 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
-            >
-              Book a Consultation Today
-            </Link>
+
+            <div className="text-center">
+              <Link
+                href="#contact"
+                className="inline-flex items-center px-8 py-4 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
+              >
+                Book a Consultation Today
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* DEI Section */}
+      {/* DEI Section with Executive Coaching Image */}
       <section id="dei" className="section bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-center mb-6">DEI Transformation</h2>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-center mb-6">DEI Transformation & Executive Coaching</h2>
             <p className="lead text-center mb-12">
               Creating meaningful, lasting change through authentic diversity, equity, and inclusion initiatives
             </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+              {/* Executive Coaching Image */}
+              <div className="img-container aspect-landscape rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="/generated/executive-coaching.jpg"
+                  alt="One-on-one executive coaching session"
+                  className="img-cover img-hover-zoom"
+                />
+              </div>
+
+              {/* Content */}
+              <div>
+                <h3 className="text-2xl font-semibold mb-6">Our Approach</h3>
+                <p className="text-lg mb-8">
+                  True DEI transformation goes beyond policies and training—it requires cultural evolution grounded in
+                  vulnerability and authentic connection. I help legal organizations build inclusive environments where
+                  every voice is valued and diverse perspectives drive innovation.
+                </p>
+              </div>
+            </div>
+
             <div className="bg-secondary rounded-2xl p-8 md:p-12">
-              <h3 className="text-2xl font-semibold mb-6">Our Approach</h3>
-              <p className="text-lg mb-8">
-                True DEI transformation goes beyond policies and training—it requires cultural evolution grounded in
-                vulnerability and authentic connection. I help legal organizations build inclusive environments where
-                every voice is valued and diverse perspectives drive innovation.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="font-semibold text-lg mb-3">Core Components</h4>
-                  <ul className="space-y-2">
+                  <h4 className="font-semibold text-lg mb-4">Core Components</h4>
+                  <ul className="space-y-3">
                     <li className="flex items-start gap-2">
                       <span className="text-primary">•</span>
                       <span>Comprehensive cultural assessments</span>
@@ -276,8 +339,8 @@ export default function Home() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg mb-3">Outcomes</h4>
-                  <ul className="space-y-2">
+                  <h4 className="font-semibold text-lg mb-4">Outcomes</h4>
+                  <ul className="space-y-3">
                     <li className="flex items-start gap-2">
                       <span className="text-primary">•</span>
                       <span>Increased team cohesion and trust</span>
@@ -318,17 +381,23 @@ export default function Home() {
               author="Sarah Mitchell"
               role="Managing Partner"
               company="Mitchell & Associates"
+              image="/generated/client-sarah.jpg"
+              imageAlt="Sarah Mitchell - Managing Partner"
             />
             <Testimonial
               quote="The Courage2Connect program gave me tools to lead with authenticity while still commanding respect in the courtroom. I'm more effective and far less burnt out."
               author="Michael Rodriguez"
               role="Trial Attorney"
+              image="/generated/client-michael.jpg"
+              imageAlt="Michael Rodriguez - Trial Attorney"
             />
             <Testimonial
               quote="Our firm culture has completely shifted. Partners are more open, associates feel heard, and our retention rates have never been better. Carl's work is transformative."
               author="Jennifer Park"
               role="Senior Partner"
               company="Park & Williams LLP"
+              image="/generated/client-jennifer.jpg"
+              imageAlt="Jennifer Park - Senior Partner"
             />
           </div>
         </div>

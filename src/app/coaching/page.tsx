@@ -26,7 +26,9 @@ export default function CoachingPage() {
         ctaLink="#enrollment"
         secondaryCtaText="Learn More"
         secondaryCtaLink="#program"
-        backgroundStyle="gradient"
+        backgroundStyle="image"
+        backgroundImage="/generated/executive-coaching.jpg"
+        backgroundImageAlt="Executive coaching session for legal professionals"
       />
 
       {/* The Problem Section */}
