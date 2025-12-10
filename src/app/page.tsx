@@ -40,13 +40,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/coaching"
-                className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
+                className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
               >
                 Explore Courage2Connect Coaching
               </Link>
               <Link
                 href="#services"
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-semibold"
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-white-button transition-all font-semibold"
               >
                 View All Services
               </Link>
@@ -146,7 +146,7 @@ export default function Home() {
               </ul>
               <Link
                 href="#contact"
-                className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
+                className="inline-flex items-center px-8 py-4 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
               >
                 Reclaim Your Passion
               </Link>
@@ -230,7 +230,7 @@ export default function Home() {
             </div>
             <Link
               href="#contact"
-              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
+              className="inline-flex items-center px-8 py-4 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-semibold"
             >
               Book a Consultation Today
             </Link>

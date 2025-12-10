@@ -578,6 +578,11 @@ Utility classes for ensuring proper text contrast
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
+/* New dedicated white text class for purple buttons */
+.text-white-button {
+  color: #ffffff !important;
+}
+
 /* Headings on dark backgrounds */
 .heading-on-dark {
   color: #ffffff !important;

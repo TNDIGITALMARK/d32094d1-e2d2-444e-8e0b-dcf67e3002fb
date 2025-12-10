@@ -59,7 +59,7 @@ export default function Navigation() {
             </Link>
             <Link
               href="/#contact"
-              className="px-6 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-medium"
+              className="px-6 py-2.5 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-medium"
             >
               Schedule Consultation
             </Link>
@@ -109,7 +109,7 @@ export default function Navigation() {
             <div className="px-4">
               <Link
                 href="/#contact"
-                className="block text-center px-6 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md"
+                className="block text-center px-6 py-2.5 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Schedule Consultation
