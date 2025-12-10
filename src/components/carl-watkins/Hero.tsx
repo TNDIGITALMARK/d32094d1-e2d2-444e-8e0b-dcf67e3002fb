@@ -30,7 +30,7 @@ export default function Hero({
   className = ''
 }: HeroProps) {
   const bgClass = backgroundStyle === 'gradient'
-    ? 'gradient-purple text-white'
+    ? 'gradient-purple text-white dark-bg-container'
     : backgroundStyle === 'solid'
     ? 'bg-secondary text-foreground'
     : 'bg-muted text-foreground'
@@ -53,14 +53,14 @@ export default function Hero({
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {preHeading && (
-            <p className="text-lg md:text-xl font-medium mb-4 opacity-90">
+            <p className="text-lg md:text-xl font-medium mb-4 opacity-90 text-on-dark-90">
               {preHeading}
             </p>
           )}
-          <h1 className="mb-6">
+          <h1 className="mb-6 text-on-dark">
             {heading}
           </h1>
-          <p className="lead mb-8 opacity-90">
+          <p className="lead mb-8 opacity-90 text-on-dark-90">
             {subheading}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

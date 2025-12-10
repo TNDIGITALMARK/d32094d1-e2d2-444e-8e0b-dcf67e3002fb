@@ -121,25 +121,25 @@ export default function Home() {
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-xs">✓</span>
+                    <span className="text-white text-xs text-on-dark">✓</span>
                   </div>
                   <span>Building trust-based leadership frameworks that reduce burnout</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-xs">✓</span>
+                    <span className="text-white text-xs text-on-dark">✓</span>
                   </div>
                   <span>Creating psychological safety within high-pressure environments</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-xs">✓</span>
+                    <span className="text-white text-xs text-on-dark">✓</span>
                   </div>
                   <span>Developing authentic communication practices for partners and teams</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <span className="text-white text-xs">✓</span>
+                    <span className="text-white text-xs text-on-dark">✓</span>
                   </div>
                   <span>Implementing sustainable success models that honor human needs</span>
                 </li>
@@ -151,24 +151,24 @@ export default function Home() {
                 Reclaim Your Passion
               </Link>
             </div>
-            <div className="bg-primary rounded-2xl p-12 text-white">
-              <h3 className="text-2xl font-semibold mb-6">Your Firm's Transformation Journey</h3>
+            <div className="bg-primary rounded-2xl p-12 text-white dark-bg-container">
+              <h3 className="text-2xl font-semibold mb-6 text-on-dark">Your Firm's Transformation Journey</h3>
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-accent mb-2">Phase 1: Discovery</h4>
-                  <p className="opacity-90">Assessment of current culture, pain points, and leadership dynamics</p>
+                  <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 1: Discovery</h4>
+                  <p className="opacity-90 text-on-dark-90">Assessment of current culture, pain points, and leadership dynamics</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-accent mb-2">Phase 2: Foundation</h4>
-                  <p className="opacity-90">Building trust, establishing vulnerability-based leadership principles</p>
+                  <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 2: Foundation</h4>
+                  <p className="opacity-90 text-on-dark-90">Building trust, establishing vulnerability-based leadership principles</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-accent mb-2">Phase 3: Implementation</h4>
-                  <p className="opacity-90">Rolling out programs, coaching leaders, transforming communication</p>
+                  <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 3: Implementation</h4>
+                  <p className="opacity-90 text-on-dark-90">Rolling out programs, coaching leaders, transforming communication</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-accent mb-2">Phase 4: Sustainability</h4>
-                  <p className="opacity-90">Creating systems for ongoing growth and cultural reinforcement</p>
+                  <h4 className="font-semibold text-accent mb-2 text-on-dark">Phase 4: Sustainability</h4>
+                  <p className="opacity-90 text-on-dark-90">Creating systems for ongoing growth and cultural reinforcement</p>
                 </div>
               </div>
             </div>
@@ -355,7 +355,7 @@ export default function Home() {
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold">1</span>
+                      <span className="text-white font-bold text-on-dark">1</span>
                     </div>
                     <div>
                       <h4 className="font-semibold">Schedule Consultation</h4>
@@ -364,7 +364,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold">2</span>
+                      <span className="text-white font-bold text-on-dark">2</span>
                     </div>
                     <div>
                       <h4 className="font-semibold">Discovery Call</h4>
@@ -373,7 +373,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                      <span className="text-white font-bold">3</span>
+                      <span className="text-white font-bold text-on-dark">3</span>
                     </div>
                     <div>
                       <h4 className="font-semibold">Begin Transformation</h4>
@@ -381,11 +381,11 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-primary text-white rounded-xl p-6">
-                  <p className="text-lg font-medium mb-2">
+                <div className="bg-primary text-white rounded-xl p-6 dark-bg-container">
+                  <p className="text-lg font-medium mb-2 text-on-dark">
                     "Authentic leadership in law is found in the courage to embrace vulnerability."
                   </p>
-                  <p className="opacity-90">— Carl Shawn Watkins</p>
+                  <p className="opacity-90 text-on-dark-90">— Carl Shawn Watkins</p>
                 </div>
               </div>
 

@@ -69,9 +69,9 @@ export default function CoachingPage() {
               </div>
             </div>
 
-            <div className="mt-12 p-8 bg-primary text-white rounded-2xl">
-              <h3 className="text-2xl font-semibold mb-4">There Is Another Way</h3>
-              <p className="text-lg opacity-90">
+            <div className="mt-12 p-8 bg-primary text-white rounded-2xl dark-bg-container">
+              <h3 className="text-2xl font-semibold mb-4 text-on-dark">There Is Another Way</h3>
+              <p className="text-lg opacity-90 text-on-dark-90">
                 Leadership doesn't require you to sacrifice your humanity. Strength isn't found in hiding your struggles—it's
                 discovered in the courage to face them. Connection isn't a distraction from excellence—it's the foundation of it.
               </p>
@@ -95,7 +95,7 @@ export default function CoachingPage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
-                  <Calendar size={32} className="text-white" />
+                  <Calendar size={32} className="text-white text-on-dark" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">6-Month Journey</h3>
                 <p className="text-muted-foreground">
@@ -104,7 +104,7 @@ export default function CoachingPage() {
               </div>
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
-                  <Target size={32} className="text-white" />
+                  <Target size={32} className="text-white text-on-dark" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Personalized Focus</h3>
                 <p className="text-muted-foreground">
@@ -113,7 +113,7 @@ export default function CoachingPage() {
               </div>
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
-                  <Award size={32} className="text-white" />
+                  <Award size={32} className="text-white text-on-dark" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Proven Framework</h3>
                 <p className="text-muted-foreground">
@@ -175,34 +175,34 @@ export default function CoachingPage() {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold text-center mb-8">Your Transformation Journey</h3>
 
-              <div className="bg-gradient-purple text-white rounded-xl p-8">
+              <div className="bg-gradient-purple text-white rounded-xl p-8 dark-bg-container">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center font-bold text-xl">
                     1
                   </div>
-                  <h4 className="text-xl font-semibold">Months 1-2: Reconnection</h4>
+                  <h4 className="text-xl font-semibold text-on-dark">Months 1-2: Reconnection</h4>
                 </div>
-                <p className="opacity-90 mb-4">
+                <p className="opacity-90 mb-4 text-on-dark-90">
                   We begin by understanding your story, identifying core values, and confronting the narratives that hold you back.
                   You'll complete a comprehensive leadership assessment and begin building vulnerability practices.
                 </p>
-                <p className="text-sm opacity-75">
+                <p className="text-sm opacity-75 text-on-dark-75">
                   Key Tools: Leadership Assessment, Vulnerability Workbook, Values Alignment Exercise
                 </p>
               </div>
 
-              <div className="bg-primary text-white rounded-xl p-8">
+              <div className="bg-primary text-white rounded-xl p-8 dark-bg-container">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-accent text-accent-foreground rounded-full flex items-center justify-center font-bold text-xl">
                     2
                   </div>
-                  <h4 className="text-xl font-semibold">Months 3-4: Rebuilding</h4>
+                  <h4 className="text-xl font-semibold text-on-dark">Months 3-4: Rebuilding</h4>
                 </div>
-                <p className="opacity-90 mb-4">
+                <p className="opacity-90 mb-4 text-on-dark-90">
                   With self-awareness established, we construct new leadership frameworks grounded in authenticity.
                   You'll develop communication strategies, relationship practices, and confidence-building routines.
                 </p>
-                <p className="text-sm opacity-75">
+                <p className="text-sm opacity-75 text-on-dark-75">
                   Key Tools: Communication Playbook, Confidence-Building Exercises, Relationship Mapping
                 </p>
               </div>
@@ -297,37 +297,37 @@ export default function CoachingPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-center mb-12">Investment in Your Future</h2>
 
-            <div className="bg-primary text-white rounded-2xl p-12 text-center mb-12">
-              <h3 className="text-3xl font-bold mb-4">Complete Program: $5,000</h3>
-              <p className="text-xl opacity-90 mb-6">6-month intensive coaching experience</p>
+            <div className="bg-primary text-white rounded-2xl p-12 text-center mb-12 dark-bg-container">
+              <h3 className="text-3xl font-bold mb-4 text-on-dark">Complete Program: $5,000</h3>
+              <p className="text-xl opacity-90 mb-6 text-on-dark-90">6-month intensive coaching experience</p>
               <ul className="text-left max-w-2xl mx-auto space-y-3 mb-8">
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 size={20} className="flex-shrink-0" />
-                  <span>12 bi-weekly 90-minute coaching sessions</span>
+                  <CheckCircle2 size={20} className="flex-shrink-0 text-on-dark" />
+                  <span className="text-on-dark">12 bi-weekly 90-minute coaching sessions</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 size={20} className="flex-shrink-0" />
-                  <span>Leadership assessment tool & detailed analysis</span>
+                  <CheckCircle2 size={20} className="flex-shrink-0 text-on-dark" />
+                  <span className="text-on-dark">Leadership assessment tool & detailed analysis</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 size={20} className="flex-shrink-0" />
-                  <span>Vulnerability workbook with guided exercises</span>
+                  <CheckCircle2 size={20} className="flex-shrink-0 text-on-dark" />
+                  <span className="text-on-dark">Vulnerability workbook with guided exercises</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 size={20} className="flex-shrink-0" />
-                  <span>Confidence-building toolkit and resources</span>
+                  <CheckCircle2 size={20} className="flex-shrink-0 text-on-dark" />
+                  <span className="text-on-dark">Confidence-building toolkit and resources</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 size={20} className="flex-shrink-0" />
-                  <span>Email support between sessions</span>
+                  <CheckCircle2 size={20} className="flex-shrink-0 text-on-dark" />
+                  <span className="text-on-dark">Email support between sessions</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle2 size={20} className="flex-shrink-0" />
-                  <span>Sustainability plan for ongoing growth</span>
+                  <CheckCircle2 size={20} className="flex-shrink-0 text-on-dark" />
+                  <span className="text-on-dark">Sustainability plan for ongoing growth</span>
                 </li>
               </ul>
               <div className="border-t border-white border-opacity-30 pt-6">
-                <p className="text-sm opacity-75">Payment plans available • Limited spots to ensure personalized attention</p>
+                <p className="text-sm opacity-75 text-on-dark-75">Payment plans available • Limited spots to ensure personalized attention</p>
               </div>
             </div>
 
@@ -414,7 +414,7 @@ export default function CoachingPage() {
                 <div className="space-y-6 mb-8">
                   <div className="flex gap-4">
                     <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
-                      1
+                      <span className="text-on-dark">1</span>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Submit Enrollment Form</h4>
@@ -423,7 +423,7 @@ export default function CoachingPage() {
                   </div>
                   <div className="flex gap-4">
                     <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
-                      2
+                      <span className="text-on-dark">2</span>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Discovery Call (30 minutes)</h4>
@@ -432,7 +432,7 @@ export default function CoachingPage() {
                   </div>
                   <div className="flex gap-4">
                     <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">
-                      3
+                      <span className="text-on-dark">3</span>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Program Kickoff</h4>

@@ -36,7 +36,7 @@ export default function NotaryPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield size={32} className="text-white" />
+                  <Shield size={32} className="text-white text-on-dark" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Certified Professional</h3>
                 <p className="text-muted-foreground">
@@ -46,7 +46,7 @@ export default function NotaryPage() {
 
               <div className="text-center">
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock size={32} className="text-white" />
+                  <Clock size={32} className="text-white text-on-dark" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Flexible Scheduling</h3>
                 <p className="text-muted-foreground">
@@ -56,7 +56,7 @@ export default function NotaryPage() {
 
               <div className="text-center">
                 <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin size={32} className="text-white" />
+                  <MapPin size={32} className="text-white text-on-dark" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Mobile Service</h3>
                 <p className="text-muted-foreground">
@@ -84,7 +84,7 @@ export default function NotaryPage() {
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
-                    <MapPin size={28} className="text-white" />
+                    <MapPin size={28} className="text-white text-on-dark" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-semibold">Mobile Notary</h3>
@@ -118,7 +118,7 @@ export default function NotaryPage() {
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
-                    <FileCheck size={28} className="text-white" />
+                    <FileCheck size={28} className="text-white text-on-dark" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-semibold">Document Preparation</h3>
@@ -152,7 +152,7 @@ export default function NotaryPage() {
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
-                    <Home size={28} className="text-white" />
+                    <Home size={28} className="text-white text-on-dark" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-semibold">Real Estate Closings</h3>
@@ -186,7 +186,7 @@ export default function NotaryPage() {
               <div className="bg-white rounded-xl p-8 shadow-md">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
-                    <Building2 size={28} className="text-white" />
+                    <Building2 size={28} className="text-white text-on-dark" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-semibold">Business Formation</h3>
@@ -217,9 +217,9 @@ export default function NotaryPage() {
               </div>
             </div>
 
-            <div className="mt-12 bg-primary text-white rounded-xl p-8 text-center">
-              <h3 className="text-2xl font-semibold mb-4">Need Something Else?</h3>
-              <p className="text-lg opacity-90 mb-6">
+            <div className="mt-12 bg-primary text-white rounded-xl p-8 text-center dark-bg-container">
+              <h3 className="text-2xl font-semibold mb-4 text-on-dark">Need Something Else?</h3>
+              <p className="text-lg opacity-90 mb-6 text-on-dark-90">
                 We handle a wide variety of documents including wills, trusts, contracts, and more.
                 Contact us for a custom quote for your specific needs.
               </p>
@@ -243,7 +243,7 @@ export default function NotaryPage() {
             <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-2xl">
-                  1
+                  <span className="text-on-dark">1</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Schedule Your Appointment</h3>
@@ -256,7 +256,7 @@ export default function NotaryPage() {
 
               <div className="flex gap-6">
                 <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-2xl">
-                  2
+                  <span className="text-on-dark">2</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Prepare Your Documents</h3>
@@ -278,7 +278,7 @@ export default function NotaryPage() {
 
               <div className="flex gap-6">
                 <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-2xl">
-                  3
+                  <span className="text-on-dark">3</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Meet for Notarization</h3>
@@ -291,7 +291,7 @@ export default function NotaryPage() {
 
               <div className="flex gap-6">
                 <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-2xl">
-                  4
+                  <span className="text-on-dark">4</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Receive Notarized Documents</h3>
@@ -445,9 +445,9 @@ export default function NotaryPage() {
                   </div>
                 </div>
 
-                <div className="bg-primary text-white rounded-xl p-6 mb-6">
-                  <h4 className="font-semibold text-lg mb-3">Need Immediate Service?</h4>
-                  <p className="mb-4 opacity-90">
+                <div className="bg-primary text-white rounded-xl p-6 mb-6 dark-bg-container">
+                  <h4 className="font-semibold text-lg mb-3 text-on-dark">Need Immediate Service?</h4>
+                  <p className="mb-4 opacity-90 text-on-dark-90">
                     Same-day appointments often available. Call us directly for urgent notarization needs.
                   </p>
                   <a

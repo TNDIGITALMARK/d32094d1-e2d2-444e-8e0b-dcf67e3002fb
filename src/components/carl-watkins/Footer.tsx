@@ -3,15 +3,15 @@ import { Mail, Phone, Linkedin, Twitter } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground pt-16 pb-8">
+    <footer className="bg-primary text-primary-foreground pt-16 pb-8 dark-bg-container">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
+            <h3 className="text-2xl font-bold mb-4 text-on-dark" style={{ fontFamily: 'var(--font-heading)' }}>
               Carl Shawn Watkins
             </h3>
-            <p className="opacity-90 mb-4">
+            <p className="opacity-90 mb-4 text-on-dark-90">
               Transforming legal professionals into confident, authentic leaders through vulnerability-based coaching and consulting.
             </p>
             <div className="flex gap-4">
@@ -26,30 +26,30 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Services</h4>
+            <h4 className="font-semibold text-lg mb-4 text-on-dark">Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/#leadership-consulting" className="opacity-90 hover:text-accent transition-colors">
+                <Link href="/#leadership-consulting" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   Leadership Consulting
                 </Link>
               </li>
               <li>
-                <Link href="/coaching" className="opacity-90 hover:text-accent transition-colors">
+                <Link href="/coaching" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   Executive Coaching
                 </Link>
               </li>
               <li>
-                <Link href="/#speaking" className="opacity-90 hover:text-accent transition-colors">
+                <Link href="/#speaking" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   Keynote Speaking
                 </Link>
               </li>
               <li>
-                <Link href="/#dei" className="opacity-90 hover:text-accent transition-colors">
+                <Link href="/#dei" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   DEI Transformation
                 </Link>
               </li>
               <li>
-                <Link href="/notary" className="opacity-90 hover:text-accent transition-colors">
+                <Link href="/notary" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   Notary Services
                 </Link>
               </li>
@@ -58,25 +58,25 @@ export default function Footer() {
 
           {/* Resources */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Resources</h4>
+            <h4 className="font-semibold text-lg mb-4 text-on-dark">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/#about" className="opacity-90 hover:text-accent transition-colors">
+                <Link href="/#about" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   About Carl
                 </Link>
               </li>
               <li>
-                <Link href="/#testimonials" className="opacity-90 hover:text-accent transition-colors">
+                <Link href="/#testimonials" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   Client Success Stories
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" className="opacity-90 hover:text-accent transition-colors">
+                <Link href="/#contact" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/coaching#faq" className="opacity-90 hover:text-accent transition-colors">
+                <Link href="/coaching#faq" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   FAQ
                 </Link>
               </li>
@@ -85,17 +85,17 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Get In Touch</h4>
+            <h4 className="font-semibold text-lg mb-4 text-on-dark">Get In Touch</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
-                <Mail size={20} />
-                <a href="mailto:carl@carlshawnwatkins.com" className="opacity-90 hover:text-accent transition-colors">
+                <Mail size={20} className="text-on-dark" />
+                <a href="mailto:carl@carlshawnwatkins.com" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   carl@carlshawnwatkins.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={20} />
-                <a href="tel:+15551234567" className="opacity-90 hover:text-accent transition-colors">
+                <Phone size={20} className="text-on-dark" />
+                <a href="tel:+15551234567" className="opacity-90 hover:text-accent transition-colors text-on-dark-90">
                   (555) 123-4567
                 </a>
               </li>
@@ -111,12 +111,12 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white border-opacity-20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-90">
-          <p>© {new Date().getFullYear()} Carl Shawn Watkins. All rights reserved.</p>
+          <p className="text-on-dark-90">© {new Date().getFullYear()} Carl Shawn Watkins. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-accent transition-colors">
+            <Link href="/privacy" className="hover:text-accent transition-colors text-on-dark-90">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-accent transition-colors">
+            <Link href="/terms" className="hover:text-accent transition-colors text-on-dark-90">
               Terms of Service
             </Link>
           </div>

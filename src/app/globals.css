@@ -556,3 +556,70 @@ Optimized image handling with Next.js Image component
   border: 2px solid hsl(var(--accent));
   box-shadow: var(--shadow-md);
 }
+
+/*
+==============================================
+TEXT ON DARK BACKGROUNDS
+==============================================
+Utility classes for ensuring proper text contrast
+*/
+
+/* Force white text on dark backgrounds */
+.text-on-dark {
+  color: #ffffff !important;
+}
+
+/* Force white text on dark with slight opacity */
+.text-on-dark-90 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.text-on-dark-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Headings on dark backgrounds */
+.heading-on-dark {
+  color: #ffffff !important;
+}
+
+/* Subheadings on dark backgrounds */
+.subheading-on-dark {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Body text on dark backgrounds */
+.body-on-dark {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Muted text on dark backgrounds */
+.muted-on-dark {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Ensure all text within dark containers is white */
+.dark-bg-container * {
+  color: #ffffff;
+}
+
+.dark-bg-container h1,
+.dark-bg-container h2,
+.dark-bg-container h3,
+.dark-bg-container h4,
+.dark-bg-container h5,
+.dark-bg-container h6 {
+  color: #ffffff !important;
+}
+
+.dark-bg-container p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-bg-container .opacity-90 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.dark-bg-container .opacity-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
