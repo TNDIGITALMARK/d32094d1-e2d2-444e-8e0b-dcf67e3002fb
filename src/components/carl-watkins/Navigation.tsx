@@ -27,7 +27,14 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-primary hover:text-accent transition-colors">
+          <Link
+            href="/"
+            className={`text-2xl font-bold transition-colors ${
+              isScrolled
+                ? 'text-primary hover:text-accent'
+                : 'text-white hover:text-accent'
+            }`}
+          >
             <span style={{ fontFamily: 'var(--font-heading)' }}>Carl Shawn Watkins</span>
           </Link>
 
@@ -35,31 +42,47 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`transition-colors font-medium ${
+                isScrolled
+                  ? 'text-foreground hover:text-primary'
+                  : 'text-white hover:text-accent'
+              }`}
             >
               Home
             </Link>
             <Link
               href="/coaching"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`transition-colors font-medium ${
+                isScrolled
+                  ? 'text-foreground hover:text-primary'
+                  : 'text-white hover:text-accent'
+              }`}
             >
               Coaching
             </Link>
             <Link
               href="/notary"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`transition-colors font-medium ${
+                isScrolled
+                  ? 'text-foreground hover:text-primary'
+                  : 'text-white hover:text-accent'
+              }`}
             >
               Notary Services
             </Link>
             <Link
               href="/#about"
-              className="text-foreground hover:text-primary transition-colors font-medium"
+              className={`transition-colors font-medium ${
+                isScrolled
+                  ? 'text-foreground hover:text-primary'
+                  : 'text-white hover:text-accent'
+              }`}
             >
               About
             </Link>
             <Link
               href="/#contact"
-              className="px-6 py-2.5 bg-primary text-white-button rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-medium"
+              className="px-6 py-2.5 bg-primary text-white rounded-lg hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg font-medium"
             >
               Schedule Consultation
             </Link>
@@ -67,7 +90,11 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground hover:text-primary"
+            className={`md:hidden transition-colors ${
+              isScrolled
+                ? 'text-foreground hover:text-primary'
+                : 'text-white hover:text-accent'
+            }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >

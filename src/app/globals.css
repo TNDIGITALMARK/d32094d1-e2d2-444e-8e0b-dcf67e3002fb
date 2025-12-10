@@ -628,3 +628,23 @@ Utility classes for ensuring proper text contrast
 .dark-bg-container .opacity-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
+
+/*
+==============================================
+NAVIGATION - TEXT ON TRANSPARENT HEADER
+==============================================
+Ensures navigation text is white when header is transparent (at page top)
+*/
+
+/* Navigation text white utility - ensures proper visibility over hero sections */
+nav a.text-white,
+nav button.text-white,
+nav span.text-white {
+  color: #ffffff !important;
+}
+
+/* Ensure menu icon is white */
+nav button.text-white svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
